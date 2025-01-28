@@ -1,0 +1,275 @@
+from data_collector import DataCollector
+from technical_analysis import TechnicalIndicators
+from options_analysis import OptionsAnalysis
+from backtester import Backtester
+from typing import Dict, Any, List
+import pandas as pd
+import logging
+from datetime import datetime
+from technical_analysis import TechnicalAnalysis
+from options_analysis import OptionsAnalysis
+from risk_manager import RiskManager
+
+class ScreenerPipeline:
+    def __init__(self):
+        self.logger = logging.getLogger(__name__)
+        self.data_collector = DataCollector()
+        self.technical_analyzer = TechnicalAnalysis()
+        self.options_analyzer = OptionsAnalysis()
+        self.backtester = Backtester()
+        self.risk_manager = RiskManager()
+
+    def process(self, ticker: str, portfolio: Dict[str, Any]) -> Dict[str, Any]:
+        """Process a single ticker through the pipeline"""
+        try:
+            self.logger.info(f"Processing {ticker} through pipeline")
+            
+            # Collect data
+            data = self.data_collector.collect_data(ticker)
+            if data is None or 'error' in data:
+                raise ValueError(f"Failed to collect data for {ticker}")
+
+            # Generate initial signal
+            signal = self._generate_trade_signal(
+                ticker=ticker,
+                technical_signals=self.technical_analyzer.analyze(data['stock_data']),
+                options_signals=self.options_analyzer.analyze(data['options_data']),
+                backtest_results=self.backtester.run_backtest(data['stock_data'])
+            )
+            
+            # Validate trade with risk manager
+            if signal.get('action') and self.risk_manager.validate_trade(signal, portfolio, data['stock_data']):
+                # Calculate position size
+                quantity = self.risk_manager.calculate_position_size(
+                    signal,
+                    portfolio,
+                    data['stock_data'],
+                    data['options_data']
+                )
+                
+                if quantity > 0:
+                    signal['quantity'] = quantity
+                    signal['stop_loss'] = self.risk_manager.get_stop_loss(
+                        data['stock_data'],
+                        signal['action']
+                    )
+                else:
+                    signal['action'] = None
+                    signal['quantity'] = 0
+            else:
+                signal['action'] = None
+                signal['quantity'] = 0
+            
+            return signal
+            
+        except Exception as e:
+            self.logger.error(f"Error processing {ticker}: {str(e)}")
+            return {
+                'ticker': ticker,
+                'action': None,
+                'quantity': 0,
+                'reason': f"Error: {str(e)}",
+                'timestamp': datetime.now().isoformat()
+            }
+
+    def _generate_trade_signal(
+        self,
+        ticker: str,
+        technical_signals: Dict[str, Any],
+        options_signals: Dict[str, Any],
+        backtest_results: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """Generate trade signal based on all analyses"""
+        try:
+            # Initialize signal components
+            action = None
+            quantity = 0
+            confidence = 0
+            reasons = []
+            
+            # Technical Analysis Signals
+            if technical_signals.get('rsi', 50) < 30:
+                confidence += 0.3
+                reasons.append("Oversold (RSI)")
+                action = "buy"
+            elif technical_signals.get('rsi', 50) > 70:
+                confidence -= 0.3
+                reasons.append("Overbought (RSI)")
+                action = "sell"
+                
+            # MACD Signal
+            if technical_signals.get('macd_signal', 0) > 0:
+                confidence += 0.2
+                reasons.append("Bullish MACD")
+            else:
+                confidence -= 0.2
+                reasons.append("Bearish MACD")
+                
+            # Options Sentiment
+            if options_signals.get('sentiment') == 'bullish':
+                confidence += 0.2
+                reasons.append("Bullish Options Flow")
+            elif options_signals.get('sentiment') == 'bearish':
+                confidence -= 0.2
+                reasons.append("Bearish Options Flow")
+                
+            # Backtest Performance
+            if backtest_results.get('sharpe_ratio', 0) > 1:
+                confidence += 0.1
+                reasons.append("Strong Historical Performance")
+            elif backtest_results.get('sharpe_ratio', 0) < -1:
+                confidence -= 0.1
+                reasons.append("Poor Historical Performance")
+                
+            # Determine final action based on confidence
+            if abs(confidence) < 0.3:
+                action = None  # Not enough confidence for a trade
+            elif confidence > 0:
+                action = "buy"
+                quantity = self._calculate_position_size(confidence)
+            else:
+                action = "sell"
+                quantity = self._calculate_position_size(abs(confidence))
+                
+            return {
+                'ticker': ticker,
+                'action': action,
+                'quantity': quantity,
+                'confidence': confidence,
+                'reasons': reasons,
+                'timestamp': datetime.now().isoformat()
+            }
+            
+        except Exception as e:
+            self.logger.error(f"Error generating trade signal: {str(e)}")
+            return {
+                'ticker': ticker,
+                'action': None,
+                'quantity': 0,
+                'reason': f"Error: {str(e)}",
+                'timestamp': datetime.now().isoformat()
+            }
+
+    def _calculate_position_size(self, confidence: float) -> int:
+        """Calculate position size based on confidence"""
+        # Simple position sizing based on confidence
+        base_quantity = 100  # Base position size
+        return int(base_quantity * confidence)
+
+    def analyze_stock(self, ticker: str) -> Dict[str, Any]:
+        """Run complete analysis pipeline for a given stock"""
+        try:
+            # 1. Collect Data
+            self.logger.info(f"Collecting data for {ticker}")
+            stock_data = self.data_collector.fetch_stock_data(ticker)
+            options_data = self.data_collector.fetch_options_chain(ticker)
+            news_data = self.data_collector.fetch_market_news(ticker)
+            
+            # 2. Technical Analysis
+            self.logger.info("Performing technical analysis")
+            tech_indicators = TechnicalIndicators(stock_data)
+            technical_signals = tech_indicators.get_signals()
+            
+            # 3. Options Analysis
+            self.logger.info("Analyzing options")
+            options_analyzer = OptionsAnalysis(stock_data, options_data)
+            options_analysis = options_analyzer.analyze_options_chain()
+            
+            # 4. Backtesting
+            self.logger.info("Running backtests")
+            backtester = Backtester(stock_data)
+            backtest_results = backtester.run_backtest()
+            
+            # 5. Generate Trade Suggestions
+            self.logger.info("Generating trade suggestions")
+            sentiment_score = self._calculate_sentiment_score(news_data)
+            trade_suggestions = options_analyzer.suggest_strategies(
+                technical_signals,
+                sentiment_score
+            )
+            
+            # 6. Compile Results
+            return {
+                'ticker': ticker,
+                'current_price': stock_data['Close'].iloc[-1],
+                'technical_analysis': technical_signals,
+                'options_analysis': options_analysis,
+                'backtest_results': backtest_results,
+                'sentiment_score': sentiment_score,
+                'trade_suggestions': [vars(strategy) for strategy in trade_suggestions],
+                'last_updated': pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')
+            }
+            
+        except Exception as e:
+            self.logger.error(f"Error in analysis pipeline: {str(e)}")
+            return {'error': str(e)}
+    
+    def _calculate_sentiment_score(self, news_data: list) -> float:
+        """Calculate sentiment score from news data"""
+        # Implement sentiment analysis here
+        # For now, return a dummy score
+        return 0.6
+
+    def generate_trade_suggestions(self, data: Dict[str, Any]) -> Dict[str, Any]:
+        """Generate trade suggestions based on analysis results"""
+        try:
+            ticker = data.get('ticker')
+            stock_data = data.get('stock_data')
+            
+            if stock_data is None or stock_data.empty:
+                raise ValueError(f"No stock data available for {ticker}")
+
+            # Get technical indicators
+            technical_analysis = data.get('technical_analysis', {})
+            rsi = technical_analysis.get('rsi', 50)
+            macd_signal = technical_analysis.get('macd_signal', 0)
+            
+            # Get current price
+            current_price = stock_data['Close'].iloc[-1]
+            
+            # Initialize trade signal
+            action = None
+            quantity = 0
+            reason = []
+            
+            # Trading logic based on RSI
+            if rsi < 30:
+                action = 'buy'
+                reason.append(f"RSI oversold ({rsi:.2f})")
+            elif rsi > 70:
+                action = 'sell'
+                reason.append(f"RSI overbought ({rsi:.2f})")
+                
+            # Add MACD signal to decision
+            if macd_signal > 0:
+                if action != 'sell':  # Don't override sell signal from RSI
+                    action = 'buy'
+                    reason.append(f"MACD bullish ({macd_signal:.2f})")
+            elif macd_signal < 0:
+                if action != 'buy':  # Don't override buy signal from RSI
+                    action = 'sell'
+                    reason.append(f"MACD bearish ({macd_signal:.2f})")
+            
+            # Calculate quantity based on fixed position size (adjust as needed)
+            if action:
+                position_size = 5000  # Fixed position size in dollars
+                quantity = int(position_size / current_price)
+            
+            return {
+                'ticker': ticker,
+                'action': action,
+                'quantity': quantity,
+                'price': current_price,
+                'reason': ' and '.join(reason) if reason else 'No clear signal',
+                'timestamp': datetime.now().isoformat()
+            }
+            
+        except Exception as e:
+            self.logger.error(f"Error generating trade suggestions: {str(e)}")
+            return {
+                'ticker': data.get('ticker', 'UNKNOWN'),
+                'action': None,
+                'quantity': 0,
+                'reason': f"Error: {str(e)}",
+                'timestamp': datetime.now().isoformat()
+            } 

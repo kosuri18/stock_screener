@@ -1,0 +1,826 @@
+2025-01-28 10:21:47,057 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 10:21:47,057 - broker_integration - INFO - Running in simulation mode
+2025-01-28 10:21:47,057 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 10:21:47,057 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 10:21:47,057 - root - INFO - Starting trading bot...
+2025-01-28 10:21:47,057 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 10:21:47,057 - root - INFO - Check interval: 300 seconds
+2025-01-28 10:21:47,057 - trading_bot - INFO - Starting trading bot...
+2025-01-28 10:21:47,057 - trading_bot - INFO - Processing AAPL
+2025-01-28 10:21:47,057 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 10:21:47,057 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 10:21:47,764 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 10:21:48,288 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 10:21:48,622 - technical_analysis - ERROR - Error in technical analysis: 'TechnicalAnalysis' object has no attribute 'calculate_rsi'
+2025-01-28 10:21:48,622 - pipeline - ERROR - Error processing AAPL: 'Backtester' object has no attribute 'run_backtest'
+2025-01-28 10:21:48,623 - trading_bot - INFO - No trade signal for AAPL
+2025-01-28 10:21:48,623 - trading_bot - INFO - Processed AAPL: None
+2025-01-28 10:21:48,623 - trading_bot - INFO - Processing MSFT
+2025-01-28 10:21:48,623 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 10:21:48,623 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 10:21:48,757 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 10:21:49,618 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 10:21:49,847 - technical_analysis - ERROR - Error in technical analysis: 'TechnicalAnalysis' object has no attribute 'calculate_rsi'
+2025-01-28 10:21:49,848 - pipeline - ERROR - Error processing MSFT: 'Backtester' object has no attribute 'run_backtest'
+2025-01-28 10:21:49,848 - trading_bot - INFO - No trade signal for MSFT
+2025-01-28 10:21:49,848 - trading_bot - INFO - Processed MSFT: None
+2025-01-28 10:21:49,848 - trading_bot - INFO - Processing GOOGL
+2025-01-28 10:21:49,848 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 10:21:49,848 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 10:21:49,978 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 10:21:50,580 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 10:21:50,771 - technical_analysis - ERROR - Error in technical analysis: 'TechnicalAnalysis' object has no attribute 'calculate_rsi'
+2025-01-28 10:21:50,771 - pipeline - ERROR - Error processing GOOGL: 'Backtester' object has no attribute 'run_backtest'
+2025-01-28 10:21:50,772 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 10:21:50,772 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 10:21:50,772 - trading_bot - INFO - Processing AMZN
+2025-01-28 10:21:50,772 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 10:21:50,772 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 10:21:50,883 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 10:21:51,360 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 10:21:51,536 - technical_analysis - ERROR - Error in technical analysis: 'TechnicalAnalysis' object has no attribute 'calculate_rsi'
+2025-01-28 10:21:51,537 - pipeline - ERROR - Error processing AMZN: 'Backtester' object has no attribute 'run_backtest'
+2025-01-28 10:21:51,537 - trading_bot - INFO - No trade signal for AMZN
+2025-01-28 10:21:51,537 - trading_bot - INFO - Processed AMZN: None
+2025-01-28 10:21:51,537 - trading_bot - INFO - Processing META
+2025-01-28 10:21:51,537 - pipeline - INFO - Processing META through pipeline
+2025-01-28 10:21:51,537 - data_collector - INFO - Fetching stock data for META
+2025-01-28 10:21:51,643 - data_collector - INFO - Fetching options data for META
+2025-01-28 10:21:52,248 - data_collector - INFO - Fetching news for META
+2025-01-28 10:21:52,430 - technical_analysis - ERROR - Error in technical analysis: 'TechnicalAnalysis' object has no attribute 'calculate_rsi'
+2025-01-28 10:21:52,431 - pipeline - ERROR - Error processing META: 'Backtester' object has no attribute 'run_backtest'
+2025-01-28 10:21:52,431 - trading_bot - INFO - No trade signal for META
+2025-01-28 10:21:52,431 - trading_bot - INFO - Processed META: None
+2025-01-28 10:21:52,431 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 10:21:52,431 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 10:22:59,366 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 10:22:59,366 - broker_integration - INFO - Running in simulation mode
+2025-01-28 10:22:59,366 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 10:22:59,366 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 10:22:59,366 - root - INFO - Starting trading bot...
+2025-01-28 10:22:59,366 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 10:22:59,366 - root - INFO - Check interval: 300 seconds
+2025-01-28 10:22:59,366 - trading_bot - INFO - Starting trading bot...
+2025-01-28 10:22:59,366 - trading_bot - INFO - Processing AAPL
+2025-01-28 10:22:59,366 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 10:22:59,366 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 10:22:59,903 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 10:23:00,383 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 10:23:00,779 - technical_analysis - ERROR - Error in technical analysis: input array type is not double
+2025-01-28 10:23:00,785 - broker_integration - ERROR - Error executing trade signal: 'BrokerIntegration' object has no attribute 'api'
+2025-01-28 10:23:00,785 - trading_bot - ERROR - Error executing trade for AAPL: 'BrokerIntegration' object has no attribute 'api'
+2025-01-28 10:23:00,785 - trading_bot - INFO - Processed AAPL: sell
+2025-01-28 10:23:00,785 - trading_bot - INFO - Processing MSFT
+2025-01-28 10:23:00,785 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 10:23:00,785 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 10:23:00,987 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 10:23:01,547 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 10:23:01,752 - technical_analysis - ERROR - Error in technical analysis: input array type is not double
+2025-01-28 10:23:01,755 - trading_bot - INFO - No trade signal for MSFT
+2025-01-28 10:23:01,755 - trading_bot - INFO - Processed MSFT: None
+2025-01-28 10:23:01,755 - trading_bot - INFO - Processing GOOGL
+2025-01-28 10:23:01,755 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 10:23:01,755 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 10:23:01,883 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 10:23:02,325 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 10:23:02,528 - technical_analysis - ERROR - Error in technical analysis: input array type is not double
+2025-01-28 10:23:02,543 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 10:23:02,543 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 10:23:02,543 - trading_bot - INFO - Processing AMZN
+2025-01-28 10:23:02,544 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 10:23:02,544 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 10:23:02,649 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 10:23:03,093 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 10:23:03,306 - technical_analysis - ERROR - Error in technical analysis: input array type is not double
+2025-01-28 10:23:03,311 - trading_bot - INFO - No trade signal for AMZN
+2025-01-28 10:23:03,311 - trading_bot - INFO - Processed AMZN: None
+2025-01-28 10:23:03,311 - trading_bot - INFO - Processing META
+2025-01-28 10:23:03,311 - pipeline - INFO - Processing META through pipeline
+2025-01-28 10:23:03,311 - data_collector - INFO - Fetching stock data for META
+2025-01-28 10:23:03,450 - data_collector - INFO - Fetching options data for META
+2025-01-28 10:23:03,935 - data_collector - INFO - Fetching news for META
+2025-01-28 10:23:04,401 - technical_analysis - ERROR - Error in technical analysis: input array type is not double
+2025-01-28 10:23:04,406 - trading_bot - INFO - No trade signal for META
+2025-01-28 10:23:04,406 - trading_bot - INFO - Processed META: None
+2025-01-28 10:23:04,406 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 10:23:04,406 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 10:24:14,855 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 10:24:14,855 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 10:24:14,855 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 10:24:14,855 - root - INFO - Starting trading bot...
+2025-01-28 10:24:14,855 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 10:24:14,855 - root - INFO - Check interval: 300 seconds
+2025-01-28 10:24:14,855 - trading_bot - INFO - Starting trading bot...
+2025-01-28 10:24:14,855 - trading_bot - INFO - Processing AAPL
+2025-01-28 10:24:14,855 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 10:24:14,855 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 10:24:15,374 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 10:24:15,951 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 10:24:16,283 - trading_bot - ERROR - Error executing trade for AAPL: Position not found
+2025-01-28 10:24:16,283 - trading_bot - INFO - Processed AAPL: sell
+2025-01-28 10:24:16,283 - trading_bot - INFO - Processing MSFT
+2025-01-28 10:24:16,283 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 10:24:16,283 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 10:24:16,400 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 10:24:16,879 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 10:24:17,123 - trading_bot - INFO - No trade signal for MSFT
+2025-01-28 10:24:17,123 - trading_bot - INFO - Processed MSFT: None
+2025-01-28 10:24:17,123 - trading_bot - INFO - Processing GOOGL
+2025-01-28 10:24:17,123 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 10:24:17,123 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 10:24:17,232 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 10:24:17,598 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 10:24:17,762 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 10:24:17,762 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 10:24:17,762 - trading_bot - INFO - Processing AMZN
+2025-01-28 10:24:17,762 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 10:24:17,763 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 10:24:17,856 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 10:24:18,606 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 10:24:18,800 - trading_bot - INFO - No trade signal for AMZN
+2025-01-28 10:24:18,801 - trading_bot - INFO - Processed AMZN: None
+2025-01-28 10:24:18,801 - trading_bot - INFO - Processing META
+2025-01-28 10:24:18,801 - pipeline - INFO - Processing META through pipeline
+2025-01-28 10:24:18,801 - data_collector - INFO - Fetching stock data for META
+2025-01-28 10:24:18,894 - data_collector - INFO - Fetching options data for META
+2025-01-28 10:24:19,563 - data_collector - INFO - Fetching news for META
+2025-01-28 10:24:19,768 - trading_bot - ERROR - Error executing trade for META: Position not found
+2025-01-28 10:24:19,768 - trading_bot - INFO - Processed META: sell
+2025-01-28 10:24:19,768 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 10:24:19,768 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 10:25:38,271 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 10:25:38,271 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 10:25:38,271 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 10:25:38,271 - root - INFO - Starting trading bot...
+2025-01-28 10:25:38,271 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 10:25:38,271 - root - INFO - Check interval: 300 seconds
+2025-01-28 10:25:38,271 - trading_bot - INFO - Starting trading bot...
+2025-01-28 10:25:38,271 - trading_bot - INFO - Processing AAPL
+2025-01-28 10:25:38,271 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 10:25:38,271 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 10:25:38,793 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 10:25:39,640 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 10:25:39,965 - trading_bot - INFO - No trade signal for AAPL
+2025-01-28 10:25:39,965 - trading_bot - INFO - Processed AAPL: None
+2025-01-28 10:25:39,965 - trading_bot - INFO - Processing MSFT
+2025-01-28 10:25:39,965 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 10:25:39,965 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 10:25:40,102 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 10:25:40,944 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 10:25:41,186 - trading_bot - INFO - No trade signal for MSFT
+2025-01-28 10:25:41,186 - trading_bot - INFO - Processed MSFT: None
+2025-01-28 10:25:41,186 - trading_bot - INFO - Processing GOOGL
+2025-01-28 10:25:41,186 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 10:25:41,186 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 10:25:41,348 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 10:25:42,370 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 10:25:42,595 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 10:25:42,595 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 10:25:42,595 - trading_bot - INFO - Processing AMZN
+2025-01-28 10:25:42,595 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 10:25:42,595 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 10:25:42,687 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 10:25:43,640 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 10:25:43,862 - trading_bot - INFO - Trade executed for AMZN: {'status': 'filled', 'ticker': 'AMZN', 'action': 'buy', 'quantity': 50, 'price': 95.56805264585628, 'timestamp': '2025-01-28T10:25:43.861973'}
+2025-01-28 10:25:43,862 - trading_bot - INFO - Processed AMZN: buy
+2025-01-28 10:25:43,862 - trading_bot - INFO - Processing META
+2025-01-28 10:25:43,862 - pipeline - INFO - Processing META through pipeline
+2025-01-28 10:25:43,862 - data_collector - INFO - Fetching stock data for META
+2025-01-28 10:25:43,975 - data_collector - INFO - Fetching options data for META
+2025-01-28 10:25:45,042 - data_collector - INFO - Fetching news for META
+2025-01-28 10:25:45,246 - trading_bot - INFO - Trade executed for META: {'status': 'filled', 'ticker': 'META', 'action': 'buy', 'quantity': 50, 'price': 99.34613913035295, 'timestamp': '2025-01-28T10:25:45.246254'}
+2025-01-28 10:25:45,246 - trading_bot - INFO - Processed META: buy
+2025-01-28 10:25:45,246 - trading_bot - INFO - Current portfolio value: $90,254.29
+2025-01-28 10:25:45,246 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 10:27:25,331 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 10:27:25,331 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 10:27:25,331 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 10:27:25,331 - root - INFO - Starting trading bot...
+2025-01-28 10:27:25,331 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 10:27:25,331 - root - INFO - Check interval: 300 seconds
+2025-01-28 10:27:25,331 - trading_bot - INFO - Starting trading bot...
+2025-01-28 10:27:25,331 - trading_bot - INFO - Processing AAPL
+2025-01-28 10:27:25,331 - trading_bot - ERROR - Error processing AAPL: ScreenerPipeline.process() missing 1 required positional argument: 'portfolio'
+2025-01-28 10:27:25,331 - trading_bot - ERROR - Error processing AAPL: ScreenerPipeline.process() missing 1 required positional argument: 'portfolio'
+2025-01-28 10:27:25,331 - trading_bot - INFO - Processing MSFT
+2025-01-28 10:27:25,331 - trading_bot - ERROR - Error processing MSFT: ScreenerPipeline.process() missing 1 required positional argument: 'portfolio'
+2025-01-28 10:27:25,331 - trading_bot - ERROR - Error processing MSFT: ScreenerPipeline.process() missing 1 required positional argument: 'portfolio'
+2025-01-28 10:27:25,331 - trading_bot - INFO - Processing GOOGL
+2025-01-28 10:27:25,331 - trading_bot - ERROR - Error processing GOOGL: ScreenerPipeline.process() missing 1 required positional argument: 'portfolio'
+2025-01-28 10:27:25,331 - trading_bot - ERROR - Error processing GOOGL: ScreenerPipeline.process() missing 1 required positional argument: 'portfolio'
+2025-01-28 10:27:25,331 - trading_bot - INFO - Processing AMZN
+2025-01-28 10:27:25,331 - trading_bot - ERROR - Error processing AMZN: ScreenerPipeline.process() missing 1 required positional argument: 'portfolio'
+2025-01-28 10:27:25,331 - trading_bot - ERROR - Error processing AMZN: ScreenerPipeline.process() missing 1 required positional argument: 'portfolio'
+2025-01-28 10:27:25,331 - trading_bot - INFO - Processing META
+2025-01-28 10:27:25,331 - trading_bot - ERROR - Error processing META: ScreenerPipeline.process() missing 1 required positional argument: 'portfolio'
+2025-01-28 10:27:25,331 - trading_bot - ERROR - Error processing META: ScreenerPipeline.process() missing 1 required positional argument: 'portfolio'
+2025-01-28 10:27:25,331 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 10:27:25,331 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 10:28:28,975 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 10:28:28,975 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 10:28:28,975 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 10:28:28,975 - root - INFO - Starting trading bot...
+2025-01-28 10:28:28,976 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 10:28:28,976 - root - INFO - Check interval: 300 seconds
+2025-01-28 10:28:28,976 - trading_bot - INFO - Starting trading bot...
+2025-01-28 10:28:28,976 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 10:28:28,976 - trading_bot - INFO - Processing AAPL
+2025-01-28 10:28:28,976 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 10:28:28,976 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 10:28:29,516 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 10:28:30,512 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 10:28:30,831 - trading_bot - INFO - No trade signal for AAPL
+2025-01-28 10:28:30,831 - trading_bot - INFO - Processed AAPL: None
+2025-01-28 10:28:30,831 - trading_bot - INFO - Processing MSFT
+2025-01-28 10:28:30,831 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 10:28:30,831 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 10:28:30,967 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 10:28:32,297 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 10:28:32,697 - trading_bot - INFO - No trade signal for MSFT
+2025-01-28 10:28:32,698 - trading_bot - INFO - Processed MSFT: None
+2025-01-28 10:28:32,698 - trading_bot - INFO - Processing GOOGL
+2025-01-28 10:28:32,698 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 10:28:32,698 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 10:28:32,813 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 10:28:33,740 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 10:28:33,952 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 10:28:33,953 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 10:28:33,953 - trading_bot - INFO - Processing AMZN
+2025-01-28 10:28:33,953 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 10:28:33,953 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 10:28:34,056 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 10:28:34,928 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 10:28:35,148 - risk_manager - WARNING - Market too volatile for AMZN
+2025-01-28 10:28:35,148 - trading_bot - INFO - No trade signal for AMZN
+2025-01-28 10:28:35,148 - trading_bot - INFO - Processed AMZN: None
+2025-01-28 10:28:35,148 - trading_bot - INFO - Processing META
+2025-01-28 10:28:35,148 - pipeline - INFO - Processing META through pipeline
+2025-01-28 10:28:35,148 - data_collector - INFO - Fetching stock data for META
+2025-01-28 10:28:35,297 - data_collector - INFO - Fetching options data for META
+2025-01-28 10:28:36,252 - data_collector - INFO - Fetching news for META
+2025-01-28 10:28:36,693 - risk_manager - WARNING - Market too volatile for META
+2025-01-28 10:28:36,693 - trading_bot - INFO - No trade signal for META
+2025-01-28 10:28:36,693 - trading_bot - INFO - Processed META: None
+2025-01-28 10:28:36,693 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 10:31:03,430 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 10:31:03,430 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 10:31:03,430 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 10:31:03,430 - root - INFO - Starting trading bot...
+2025-01-28 10:31:03,430 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 10:31:03,430 - root - INFO - Check interval: 300 seconds
+2025-01-28 10:31:03,430 - trading_bot - INFO - Starting trading bot...
+2025-01-28 10:31:03,430 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 10:31:03,430 - trading_bot - INFO - Processing AAPL
+2025-01-28 10:31:03,430 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 10:31:03,430 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 10:31:03,961 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 10:31:04,936 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 10:31:05,292 - trading_bot - INFO - No trade signal for AAPL
+2025-01-28 10:31:05,292 - trading_bot - INFO - Processed AAPL: None
+2025-01-28 10:31:05,292 - trading_bot - INFO - Processing MSFT
+2025-01-28 10:31:05,292 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 10:31:05,292 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 10:31:05,478 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 10:31:06,603 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 10:31:06,819 - trading_bot - INFO - No trade signal for MSFT
+2025-01-28 10:31:06,820 - trading_bot - INFO - Processed MSFT: None
+2025-01-28 10:31:06,820 - trading_bot - INFO - Processing GOOGL
+2025-01-28 10:31:06,820 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 10:31:06,820 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 10:31:06,962 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 10:31:08,094 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 10:31:08,282 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 10:31:08,282 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 10:31:08,282 - trading_bot - INFO - Processing AMZN
+2025-01-28 10:31:08,282 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 10:31:08,282 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 10:31:08,432 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 10:31:09,537 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 10:31:13,419 - trading_bot - INFO - Trade executed for AMZN: {'status': 'filled', 'ticker': 'AMZN', 'action': 'buy', 'quantity': 22, 'price': 97.42219268001303, 'timestamp': '2025-01-28T10:31:13.419059'}
+2025-01-28 10:31:13,419 - trading_bot - INFO - Processed AMZN: buy
+2025-01-28 10:31:13,419 - trading_bot - INFO - Current portfolio value: $97,856.71
+2025-01-28 10:31:13,419 - trading_bot - INFO - Processing META
+2025-01-28 10:31:13,419 - pipeline - INFO - Processing META through pipeline
+2025-01-28 10:31:13,419 - data_collector - INFO - Fetching stock data for META
+2025-01-28 10:31:13,609 - data_collector - INFO - Fetching options data for META
+2025-01-28 10:31:14,863 - data_collector - INFO - Fetching news for META
+2025-01-28 10:31:15,303 - risk_manager - ERROR - Error validating trade: 'str' object has no attribute 'get'
+2025-01-28 10:31:15,304 - trading_bot - INFO - No trade signal for META
+2025-01-28 10:31:15,304 - trading_bot - INFO - Processed META: None
+2025-01-28 10:31:15,304 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 11:10:24,018 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 11:10:24,018 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 11:10:24,018 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:10:24,018 - root - INFO - Starting trading bot...
+2025-01-28 11:10:24,018 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 11:10:24,018 - root - INFO - Check interval: 300 seconds
+2025-01-28 11:10:24,018 - trading_bot - INFO - Starting trading bot...
+2025-01-28 11:10:24,018 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:10:24,018 - trading_bot - INFO - Processing AAPL
+2025-01-28 11:10:24,018 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 11:10:24,018 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 11:10:24,591 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 11:10:25,434 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 11:10:25,777 - trading_bot - INFO - No trade signal for AAPL
+2025-01-28 11:10:25,777 - trading_bot - INFO - Processed AAPL: None
+2025-01-28 11:10:25,777 - trading_bot - INFO - Processing MSFT
+2025-01-28 11:10:25,777 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 11:10:25,777 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 11:10:25,912 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 11:10:26,730 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 11:10:28,332 - risk_manager - WARNING - Stock too volatile for MSFT
+2025-01-28 11:10:28,332 - trading_bot - INFO - No trade signal for MSFT
+2025-01-28 11:10:28,332 - trading_bot - INFO - Processed MSFT: None
+2025-01-28 11:10:28,332 - trading_bot - INFO - Processing GOOGL
+2025-01-28 11:10:28,332 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 11:10:28,333 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 11:10:28,448 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 11:10:29,075 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 11:10:29,274 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 11:10:29,274 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 11:10:29,274 - trading_bot - INFO - Processing AMZN
+2025-01-28 11:10:29,274 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 11:10:29,274 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 11:10:29,371 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 11:10:30,076 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 11:10:30,289 - risk_manager - WARNING - Stock too volatile for AMZN
+2025-01-28 11:10:30,290 - trading_bot - INFO - No trade signal for AMZN
+2025-01-28 11:10:30,290 - trading_bot - INFO - Processed AMZN: None
+2025-01-28 11:10:30,290 - trading_bot - INFO - Processing META
+2025-01-28 11:10:30,290 - pipeline - INFO - Processing META through pipeline
+2025-01-28 11:10:30,290 - data_collector - INFO - Fetching stock data for META
+2025-01-28 11:10:30,415 - data_collector - INFO - Fetching options data for META
+2025-01-28 11:10:31,331 - data_collector - INFO - Fetching news for META
+2025-01-28 11:10:31,594 - trading_bot - INFO - No trade signal for META
+2025-01-28 11:10:31,594 - trading_bot - INFO - Processed META: None
+2025-01-28 11:10:31,594 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 11:12:12,599 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 11:12:12,599 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 11:12:12,599 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:12:12,599 - root - INFO - Starting trading bot...
+2025-01-28 11:12:12,599 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 11:12:12,599 - root - INFO - Check interval: 300 seconds
+2025-01-28 11:12:12,599 - trading_bot - INFO - Starting trading bot...
+2025-01-28 11:12:12,599 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:12:12,599 - trading_bot - INFO - Processing AAPL
+2025-01-28 11:12:12,599 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 11:12:12,599 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 11:12:13,092 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 11:12:13,747 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 11:12:14,088 - trading_bot - INFO - No trade signal for AAPL
+2025-01-28 11:12:14,088 - trading_bot - INFO - Processed AAPL: None
+2025-01-28 11:12:14,088 - trading_bot - INFO - Processing MSFT
+2025-01-28 11:12:14,088 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 11:12:14,088 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 11:12:14,229 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 11:12:14,994 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 11:12:16,561 - risk_manager - WARNING - Stock volatility (20.60%) significantly above threshold (3.90%) for MSFT
+2025-01-28 11:12:16,561 - trading_bot - INFO - No trade signal for MSFT
+2025-01-28 11:12:16,561 - trading_bot - INFO - Processed MSFT: None
+2025-01-28 11:12:16,561 - trading_bot - INFO - Processing GOOGL
+2025-01-28 11:12:16,561 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 11:12:16,561 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 11:12:16,669 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 11:12:17,264 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 11:12:17,558 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 11:12:17,558 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 11:12:17,558 - trading_bot - INFO - Processing AMZN
+2025-01-28 11:12:17,558 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 11:12:17,558 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 11:12:17,654 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 11:12:18,406 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 11:12:18,635 - risk_manager - WARNING - Stock volatility (28.34%) significantly above threshold (3.90%) for AMZN
+2025-01-28 11:12:18,635 - trading_bot - INFO - No trade signal for AMZN
+2025-01-28 11:12:18,635 - trading_bot - INFO - Processed AMZN: None
+2025-01-28 11:12:18,635 - trading_bot - INFO - Processing META
+2025-01-28 11:12:18,635 - pipeline - INFO - Processing META through pipeline
+2025-01-28 11:12:18,635 - data_collector - INFO - Fetching stock data for META
+2025-01-28 11:12:18,733 - data_collector - INFO - Fetching options data for META
+2025-01-28 11:12:19,888 - data_collector - INFO - Fetching news for META
+2025-01-28 11:12:20,102 - trading_bot - INFO - No trade signal for META
+2025-01-28 11:12:20,102 - trading_bot - INFO - Processed META: None
+2025-01-28 11:12:20,102 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 11:13:19,555 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 11:13:19,555 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 11:13:19,555 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:13:19,555 - root - INFO - Starting trading bot...
+2025-01-28 11:13:19,555 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 11:13:19,555 - root - INFO - Check interval: 300 seconds
+2025-01-28 11:13:19,555 - trading_bot - INFO - Starting trading bot...
+2025-01-28 11:13:19,555 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:13:19,555 - trading_bot - INFO - Processing AAPL
+2025-01-28 11:13:19,555 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 11:13:19,555 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 11:13:20,045 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 11:13:20,740 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 11:13:21,105 - trading_bot - INFO - No trade signal for AAPL
+2025-01-28 11:13:21,105 - trading_bot - INFO - Processed AAPL: None
+2025-01-28 11:13:21,105 - trading_bot - INFO - Processing MSFT
+2025-01-28 11:13:21,105 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 11:13:21,105 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 11:13:21,252 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 11:13:21,874 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 11:13:23,527 - risk_manager - INFO - Position size calculation for MSFT:
+2025-01-28 11:13:23,527 - risk_manager - INFO - - Volatility adjustment: 1.00
+2025-01-28 11:13:23,527 - risk_manager - INFO - - Confidence adjustment: 0.40
+2025-01-28 11:13:23,527 - risk_manager - INFO - - Final shares: 11
+2025-01-28 11:13:23,527 - trading_bot - INFO - Trade executed for MSFT: {'status': 'filled', 'ticker': 'MSFT', 'action': 'buy', 'quantity': 11, 'price': 103.59856801719742, 'timestamp': '2025-01-28T11:13:23.527562'}
+2025-01-28 11:13:23,527 - trading_bot - INFO - Processed MSFT: buy
+2025-01-28 11:13:23,527 - trading_bot - INFO - Current portfolio value: $98,860.42
+2025-01-28 11:13:23,527 - trading_bot - INFO - Processing GOOGL
+2025-01-28 11:13:23,527 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 11:13:23,527 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 11:13:23,641 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 11:13:24,224 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 11:13:24,472 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 11:13:24,473 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 11:13:24,473 - trading_bot - INFO - Processing AMZN
+2025-01-28 11:13:24,473 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 11:13:24,473 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 11:13:24,572 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 11:13:25,186 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 11:13:25,423 - risk_manager - INFO - Position size calculation for AMZN:
+2025-01-28 11:13:25,423 - risk_manager - INFO - - Volatility adjustment: 1.00
+2025-01-28 11:13:25,423 - risk_manager - INFO - - Confidence adjustment: 0.50
+2025-01-28 11:13:25,423 - risk_manager - INFO - - Final shares: 22
+2025-01-28 11:13:25,423 - trading_bot - INFO - Trade executed for AMZN: {'status': 'filled', 'ticker': 'AMZN', 'action': 'buy', 'quantity': 22, 'price': 98.73134983881995, 'timestamp': '2025-01-28T11:13:25.423521'}
+2025-01-28 11:13:25,423 - trading_bot - INFO - Processed AMZN: buy
+2025-01-28 11:13:25,423 - trading_bot - INFO - Current portfolio value: $96,688.33
+2025-01-28 11:13:25,423 - trading_bot - INFO - Processing META
+2025-01-28 11:13:25,423 - pipeline - INFO - Processing META through pipeline
+2025-01-28 11:13:25,423 - data_collector - INFO - Fetching stock data for META
+2025-01-28 11:13:25,538 - data_collector - INFO - Fetching options data for META
+2025-01-28 11:13:26,290 - data_collector - INFO - Fetching news for META
+2025-01-28 11:13:26,483 - trading_bot - INFO - No trade signal for META
+2025-01-28 11:13:26,483 - trading_bot - INFO - Processed META: None
+2025-01-28 11:13:26,483 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 11:14:29,940 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 11:14:29,940 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 11:14:29,940 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:14:29,940 - root - INFO - Starting trading bot...
+2025-01-28 11:14:29,940 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 11:14:29,940 - root - INFO - Check interval: 300 seconds
+2025-01-28 11:14:29,940 - trading_bot - INFO - Starting trading bot...
+2025-01-28 11:14:29,940 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:14:29,940 - trading_bot - INFO - Processing AAPL
+2025-01-28 11:14:29,940 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 11:14:29,940 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 11:14:30,382 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 11:14:31,146 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 11:14:31,502 - trading_bot - INFO - No trade signal for AAPL
+2025-01-28 11:14:31,502 - trading_bot - INFO - Processed AAPL: None
+2025-01-28 11:14:31,502 - trading_bot - INFO - Processing MSFT
+2025-01-28 11:14:31,503 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 11:14:31,503 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 11:14:31,612 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 11:14:32,232 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 11:14:32,488 - risk_manager - ERROR - Error in trade validation: 'super' object has no attribute 'validate_trade'
+2025-01-28 11:14:32,488 - trading_bot - INFO - No trade signal for MSFT
+2025-01-28 11:14:32,488 - trading_bot - INFO - Processed MSFT: None
+2025-01-28 11:14:32,488 - trading_bot - INFO - Processing GOOGL
+2025-01-28 11:14:32,488 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 11:14:32,488 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 11:14:32,582 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 11:14:33,150 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 11:14:33,449 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 11:14:33,449 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 11:14:33,449 - trading_bot - INFO - Processing AMZN
+2025-01-28 11:14:33,449 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 11:14:33,449 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 11:14:33,533 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 11:14:34,127 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 11:14:34,328 - risk_manager - ERROR - Error in trade validation: 'super' object has no attribute 'validate_trade'
+2025-01-28 11:14:34,328 - trading_bot - INFO - No trade signal for AMZN
+2025-01-28 11:14:34,328 - trading_bot - INFO - Processed AMZN: None
+2025-01-28 11:14:34,328 - trading_bot - INFO - Processing META
+2025-01-28 11:14:34,328 - pipeline - INFO - Processing META through pipeline
+2025-01-28 11:14:34,329 - data_collector - INFO - Fetching stock data for META
+2025-01-28 11:14:34,427 - data_collector - INFO - Fetching options data for META
+2025-01-28 11:14:35,313 - data_collector - INFO - Fetching news for META
+2025-01-28 11:14:35,522 - trading_bot - INFO - No trade signal for META
+2025-01-28 11:14:35,522 - trading_bot - INFO - Processed META: None
+2025-01-28 11:14:35,523 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 11:15:59,967 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 11:15:59,967 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 11:15:59,967 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:15:59,967 - root - INFO - Starting trading bot...
+2025-01-28 11:15:59,967 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 11:15:59,967 - root - INFO - Check interval: 300 seconds
+2025-01-28 11:15:59,967 - trading_bot - INFO - Starting trading bot...
+2025-01-28 11:15:59,967 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:15:59,967 - trading_bot - INFO - Processing AAPL
+2025-01-28 11:15:59,967 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 11:15:59,967 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 11:16:00,504 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 11:16:01,137 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 11:16:01,510 - trading_bot - INFO - No trade signal for AAPL
+2025-01-28 11:16:01,510 - trading_bot - INFO - Processed AAPL: None
+2025-01-28 11:16:01,510 - trading_bot - INFO - Processing MSFT
+2025-01-28 11:16:01,510 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 11:16:01,510 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 11:16:01,644 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 11:16:02,305 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 11:16:03,859 - risk_manager - ERROR - Error calculating position size: 'super' object has no attribute 'calculate_position_size'
+2025-01-28 11:16:03,859 - trading_bot - INFO - No trade signal for MSFT
+2025-01-28 11:16:03,859 - trading_bot - INFO - Processed MSFT: None
+2025-01-28 11:16:03,859 - trading_bot - INFO - Processing GOOGL
+2025-01-28 11:16:03,859 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 11:16:03,859 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 11:16:03,960 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 11:16:04,748 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 11:16:04,979 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 11:16:04,979 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 11:16:04,979 - trading_bot - INFO - Processing AMZN
+2025-01-28 11:16:04,979 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 11:16:04,980 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 11:16:05,082 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 11:16:05,690 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 11:16:05,879 - risk_manager - ERROR - Error calculating position size: 'super' object has no attribute 'calculate_position_size'
+2025-01-28 11:16:05,880 - trading_bot - INFO - No trade signal for AMZN
+2025-01-28 11:16:05,880 - trading_bot - INFO - Processed AMZN: None
+2025-01-28 11:16:05,880 - trading_bot - INFO - Processing META
+2025-01-28 11:16:05,880 - pipeline - INFO - Processing META through pipeline
+2025-01-28 11:16:05,880 - data_collector - INFO - Fetching stock data for META
+2025-01-28 11:16:05,982 - data_collector - INFO - Fetching options data for META
+2025-01-28 11:16:07,040 - data_collector - INFO - Fetching news for META
+2025-01-28 11:16:07,262 - trading_bot - INFO - No trade signal for META
+2025-01-28 11:16:07,262 - trading_bot - INFO - Processed META: None
+2025-01-28 11:16:07,262 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 11:17:13,529 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 11:17:13,529 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 11:17:13,529 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:17:13,529 - root - INFO - Starting trading bot...
+2025-01-28 11:17:13,529 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 11:17:13,529 - root - INFO - Check interval: 300 seconds
+2025-01-28 11:17:13,529 - trading_bot - INFO - Starting trading bot...
+2025-01-28 11:17:13,529 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:17:13,529 - trading_bot - INFO - Processing AAPL
+2025-01-28 11:17:13,529 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 11:17:13,529 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 11:17:14,024 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 11:17:14,668 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 11:17:15,045 - trading_bot - INFO - No trade signal for AAPL
+2025-01-28 11:17:15,045 - trading_bot - INFO - Processed AAPL: None
+2025-01-28 11:17:15,045 - trading_bot - INFO - Processing MSFT
+2025-01-28 11:17:15,045 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 11:17:15,045 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 11:17:15,157 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 11:17:15,788 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 11:17:17,220 - risk_manager - INFO - Position size calculation for MSFT:
+2025-01-28 11:17:17,220 - risk_manager - INFO - - Base shares: 103
+2025-01-28 11:17:17,220 - risk_manager - INFO - - Correlation adjustment: 1.00
+2025-01-28 11:17:17,220 - risk_manager - INFO - - Sector adjustment: 1.00
+2025-01-28 11:17:17,220 - risk_manager - INFO - - Volatility adjustment: 1.00
+2025-01-28 11:17:17,220 - risk_manager - INFO - - Confidence adjustment: 0.40
+2025-01-28 11:17:17,220 - risk_manager - INFO - - Final shares: 22
+2025-01-28 11:17:17,220 - trading_bot - INFO - Trade executed for MSFT: {'status': 'filled', 'ticker': 'MSFT', 'action': 'buy', 'quantity': 22, 'price': 99.8994267888005, 'timestamp': '2025-01-28T11:17:17.220662'}
+2025-01-28 11:17:17,220 - trading_bot - INFO - Processed MSFT: buy
+2025-01-28 11:17:17,220 - trading_bot - INFO - Current portfolio value: $97,802.21
+2025-01-28 11:17:17,220 - trading_bot - INFO - Processing GOOGL
+2025-01-28 11:17:17,220 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 11:17:17,220 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 11:17:17,312 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 11:17:17,844 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 11:17:18,062 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 11:17:18,062 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 11:17:18,062 - trading_bot - INFO - Processing AMZN
+2025-01-28 11:17:18,062 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 11:17:18,062 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 11:17:18,163 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 11:17:18,771 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 11:17:19,275 - risk_manager - INFO - Position size calculation for AMZN:
+2025-01-28 11:17:19,276 - risk_manager - INFO - - Base shares: 181
+2025-01-28 11:17:19,276 - risk_manager - INFO - - Correlation adjustment: 1.00
+2025-01-28 11:17:19,276 - risk_manager - INFO - - Sector adjustment: 1.00
+2025-01-28 11:17:19,276 - risk_manager - INFO - - Volatility adjustment: 1.00
+2025-01-28 11:17:19,276 - risk_manager - INFO - - Confidence adjustment: 0.50
+2025-01-28 11:17:19,276 - risk_manager - INFO - - Final shares: 40
+2025-01-28 11:17:19,276 - trading_bot - INFO - Trade executed for AMZN: {'status': 'filled', 'ticker': 'AMZN', 'action': 'buy', 'quantity': 40, 'price': 101.49616675736497, 'timestamp': '2025-01-28T11:17:19.276312'}
+2025-01-28 11:17:19,276 - trading_bot - INFO - Processed AMZN: buy
+2025-01-28 11:17:19,276 - trading_bot - INFO - Current portfolio value: $93,742.37
+2025-01-28 11:17:19,276 - trading_bot - INFO - Processing META
+2025-01-28 11:17:19,276 - pipeline - INFO - Processing META through pipeline
+2025-01-28 11:17:19,276 - data_collector - INFO - Fetching stock data for META
+2025-01-28 11:17:19,389 - data_collector - INFO - Fetching options data for META
+2025-01-28 11:17:20,168 - data_collector - INFO - Fetching news for META
+2025-01-28 11:17:20,390 - trading_bot - INFO - No trade signal for META
+2025-01-28 11:17:20,390 - trading_bot - INFO - Processed META: None
+2025-01-28 11:17:20,390 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 11:19:58,667 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 11:19:58,667 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 11:19:58,667 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:19:58,667 - root - INFO - Starting trading bot...
+2025-01-28 11:19:58,667 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 11:19:58,667 - root - INFO - Check interval: 300 seconds
+2025-01-28 11:19:58,667 - trading_bot - INFO - Starting trading bot...
+2025-01-28 11:19:58,667 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:19:58,667 - trading_bot - INFO - Processing AAPL
+2025-01-28 11:19:58,667 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 11:19:58,667 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 11:19:59,159 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 11:19:59,915 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 11:20:00,309 - trading_bot - INFO - No trade signal for AAPL
+2025-01-28 11:20:00,309 - trading_bot - INFO - Processed AAPL: None
+2025-01-28 11:20:00,309 - trading_bot - INFO - Processing MSFT
+2025-01-28 11:20:00,309 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 11:20:00,309 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 11:20:00,426 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 11:20:01,109 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 11:20:02,607 - risk_manager - INFO - Stop-loss levels for MSFT:
+2025-01-28 11:20:02,607 - risk_manager - INFO - - Entry price: $442.54
+2025-01-28 11:20:02,607 - risk_manager - INFO - - Initial stop: $418.20 (5.5%)
+2025-01-28 11:20:02,607 - risk_manager - INFO - - Trailing stop: $432.80 (2.2%)
+2025-01-28 11:20:02,607 - risk_manager - ERROR - Error in trade validation: name 'final_shares' is not defined
+2025-01-28 11:20:02,608 - trading_bot - INFO - No trade signal for MSFT
+2025-01-28 11:20:02,608 - trading_bot - INFO - Processed MSFT: None
+2025-01-28 11:20:02,608 - trading_bot - INFO - Processing GOOGL
+2025-01-28 11:20:02,608 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 11:20:02,608 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 11:20:02,715 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 11:20:03,462 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 11:20:03,676 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 11:20:03,676 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 11:20:03,676 - trading_bot - INFO - Processing AMZN
+2025-01-28 11:20:03,676 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 11:20:03,676 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 11:20:03,801 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 11:20:04,535 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 11:20:04,956 - risk_manager - INFO - Stop-loss levels for AMZN:
+2025-01-28 11:20:04,956 - risk_manager - INFO - - Entry price: $240.62
+2025-01-28 11:20:04,956 - risk_manager - INFO - - Initial stop: $227.39 (5.5%)
+2025-01-28 11:20:04,956 - risk_manager - INFO - - Trailing stop: $235.33 (2.2%)
+2025-01-28 11:20:04,956 - risk_manager - ERROR - Error in trade validation: name 'final_shares' is not defined
+2025-01-28 11:20:04,956 - trading_bot - INFO - No trade signal for AMZN
+2025-01-28 11:20:04,956 - trading_bot - INFO - Processed AMZN: None
+2025-01-28 11:20:04,956 - trading_bot - INFO - Processing META
+2025-01-28 11:20:04,956 - pipeline - INFO - Processing META through pipeline
+2025-01-28 11:20:04,956 - data_collector - INFO - Fetching stock data for META
+2025-01-28 11:20:05,048 - data_collector - INFO - Fetching options data for META
+2025-01-28 11:20:06,022 - data_collector - INFO - Fetching news for META
+2025-01-28 11:20:06,304 - trading_bot - INFO - No trade signal for META
+2025-01-28 11:20:06,304 - trading_bot - INFO - Processed META: None
+2025-01-28 11:20:06,304 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 11:45:21,467 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 11:45:21,467 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 11:45:21,467 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:45:21,467 - root - INFO - Starting trading bot...
+2025-01-28 11:45:21,467 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 11:45:21,467 - root - INFO - Check interval: 300 seconds
+2025-01-28 11:45:21,467 - trading_bot - INFO - Starting trading bot...
+2025-01-28 11:45:21,467 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:45:21,467 - trading_bot - INFO - Processing AAPL
+2025-01-28 11:45:21,467 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 11:45:21,467 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 11:45:22,014 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 11:45:22,690 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 11:45:23,126 - trading_bot - INFO - No trade signal for AAPL
+2025-01-28 11:45:23,126 - trading_bot - INFO - Processed AAPL: None
+2025-01-28 11:45:23,126 - trading_bot - INFO - Processing MSFT
+2025-01-28 11:45:23,126 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 11:45:23,126 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 11:45:23,254 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 11:45:23,898 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 11:45:25,342 - risk_manager - INFO - Position size calculation for MSFT:
+2025-01-28 11:45:25,342 - risk_manager - INFO - - Base shares: 103
+2025-01-28 11:45:25,342 - risk_manager - INFO - - Correlation adjustment: 1.00
+2025-01-28 11:45:25,342 - risk_manager - INFO - - Sector adjustment: 1.00
+2025-01-28 11:45:25,342 - risk_manager - INFO - - Volatility adjustment: 1.00
+2025-01-28 11:45:25,342 - risk_manager - INFO - - Confidence adjustment: 0.40
+2025-01-28 11:45:25,342 - risk_manager - INFO - - Final shares: 22
+2025-01-28 11:45:25,342 - risk_manager - INFO - Stop-loss levels for MSFT:
+2025-01-28 11:45:25,342 - risk_manager - INFO - - Entry price: $442.30
+2025-01-28 11:45:25,342 - risk_manager - INFO - - Initial stop: $417.97 (5.5%)
+2025-01-28 11:45:25,342 - risk_manager - INFO - - Trailing stop: $432.56 (2.2%)
+2025-01-28 11:45:25,343 - risk_manager - INFO - Position size calculation for MSFT:
+2025-01-28 11:45:25,343 - risk_manager - INFO - - Base shares: 103
+2025-01-28 11:45:25,343 - risk_manager - INFO - - Correlation adjustment: 1.00
+2025-01-28 11:45:25,343 - risk_manager - INFO - - Sector adjustment: 1.00
+2025-01-28 11:45:25,343 - risk_manager - INFO - - Volatility adjustment: 1.00
+2025-01-28 11:45:25,343 - risk_manager - INFO - - Confidence adjustment: 0.40
+2025-01-28 11:45:25,343 - risk_manager - INFO - - Final shares: 22
+2025-01-28 11:45:25,343 - trading_bot - INFO - Trade executed for MSFT: {'status': 'filled', 'ticker': 'MSFT', 'action': 'buy', 'quantity': 22, 'price': 95.78458652435724, 'timestamp': '2025-01-28T11:45:25.343358'}
+2025-01-28 11:45:25,343 - trading_bot - INFO - Processed MSFT: buy
+2025-01-28 11:45:25,343 - trading_bot - INFO - Current portfolio value: $97,892.74
+2025-01-28 11:45:25,343 - trading_bot - INFO - Processing GOOGL
+2025-01-28 11:45:25,343 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 11:45:25,343 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 11:45:25,444 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 11:45:26,049 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 11:45:26,273 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 11:45:26,273 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 11:45:26,273 - trading_bot - INFO - Processing AMZN
+2025-01-28 11:45:26,273 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 11:45:26,273 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 11:45:26,359 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 11:45:26,879 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 11:45:27,283 - risk_manager - INFO - Position size calculation for AMZN:
+2025-01-28 11:45:27,284 - risk_manager - INFO - - Base shares: 181
+2025-01-28 11:45:27,284 - risk_manager - INFO - - Correlation adjustment: 1.00
+2025-01-28 11:45:27,284 - risk_manager - INFO - - Sector adjustment: 1.00
+2025-01-28 11:45:27,284 - risk_manager - INFO - - Volatility adjustment: 1.00
+2025-01-28 11:45:27,284 - risk_manager - INFO - - Confidence adjustment: 0.50
+2025-01-28 11:45:27,284 - risk_manager - INFO - - Final shares: 40
+2025-01-28 11:45:27,284 - risk_manager - INFO - Stop-loss levels for AMZN:
+2025-01-28 11:45:27,284 - risk_manager - INFO - - Entry price: $239.56
+2025-01-28 11:45:27,284 - risk_manager - INFO - - Initial stop: $226.38 (5.5%)
+2025-01-28 11:45:27,284 - risk_manager - INFO - - Trailing stop: $234.29 (2.2%)
+2025-01-28 11:45:27,349 - risk_manager - INFO - Position size calculation for AMZN:
+2025-01-28 11:45:27,349 - risk_manager - INFO - - Base shares: 181
+2025-01-28 11:45:27,349 - risk_manager - INFO - - Correlation adjustment: 1.00
+2025-01-28 11:45:27,349 - risk_manager - INFO - - Sector adjustment: 1.00
+2025-01-28 11:45:27,349 - risk_manager - INFO - - Volatility adjustment: 1.00
+2025-01-28 11:45:27,349 - risk_manager - INFO - - Confidence adjustment: 0.50
+2025-01-28 11:45:27,349 - risk_manager - INFO - - Final shares: 40
+2025-01-28 11:45:27,349 - trading_bot - INFO - Trade executed for AMZN: {'status': 'filled', 'ticker': 'AMZN', 'action': 'buy', 'quantity': 40, 'price': 103.82174757959888, 'timestamp': '2025-01-28T11:45:27.349537'}
+2025-01-28 11:45:27,349 - trading_bot - INFO - Processed AMZN: buy
+2025-01-28 11:45:27,349 - trading_bot - INFO - Current portfolio value: $93,739.87
+2025-01-28 11:45:27,349 - trading_bot - INFO - Processing META
+2025-01-28 11:45:27,349 - pipeline - INFO - Processing META through pipeline
+2025-01-28 11:45:27,349 - data_collector - INFO - Fetching stock data for META
+2025-01-28 11:45:27,438 - data_collector - INFO - Fetching options data for META
+2025-01-28 11:45:28,134 - data_collector - INFO - Fetching news for META
+2025-01-28 11:45:28,335 - trading_bot - INFO - No trade signal for META
+2025-01-28 11:45:28,335 - trading_bot - INFO - Processed META: None
+2025-01-28 11:45:28,335 - trading_bot - INFO - Test mode - completing single run
+2025-01-28 11:49:41,557 - broker_integration - WARNING - Missing Alpaca API credentials. Running in simulation mode.
+2025-01-28 11:49:41,557 - trading_bot - INFO - Starting trading bot for tickers: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+2025-01-28 11:49:41,557 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:49:41,557 - root - INFO - Starting trading bot...
+2025-01-28 11:49:41,557 - root - INFO - Monitoring tickers: AAPL, MSFT, GOOGL, AMZN, META
+2025-01-28 11:49:41,557 - root - INFO - Check interval: 300 seconds
+2025-01-28 11:49:41,557 - trading_bot - INFO - Starting trading bot...
+2025-01-28 11:49:41,557 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:49:41,557 - trading_bot - INFO - Processing AAPL
+2025-01-28 11:49:41,557 - pipeline - INFO - Processing AAPL through pipeline
+2025-01-28 11:49:41,557 - data_collector - INFO - Fetching stock data for AAPL
+2025-01-28 11:49:42,062 - data_collector - INFO - Fetching options data for AAPL
+2025-01-28 11:49:42,678 - data_collector - INFO - Fetching news for AAPL
+2025-01-28 11:49:43,087 - trading_bot - INFO - No trade signal for AAPL
+2025-01-28 11:49:43,088 - trading_bot - INFO - Processed AAPL: None
+2025-01-28 11:49:43,088 - trading_bot - INFO - Processing MSFT
+2025-01-28 11:49:43,088 - pipeline - INFO - Processing MSFT through pipeline
+2025-01-28 11:49:43,088 - data_collector - INFO - Fetching stock data for MSFT
+2025-01-28 11:49:43,282 - data_collector - INFO - Fetching options data for MSFT
+2025-01-28 11:49:43,931 - data_collector - INFO - Fetching news for MSFT
+2025-01-28 11:49:45,388 - risk_manager - INFO - Position size calculation for MSFT:
+2025-01-28 11:49:45,389 - risk_manager - INFO - - Base shares: 103
+2025-01-28 11:49:45,389 - risk_manager - INFO - - Correlation adjustment: 1.00
+2025-01-28 11:49:45,389 - risk_manager - INFO - - Sector adjustment: 1.00
+2025-01-28 11:49:45,389 - risk_manager - INFO - - Volatility adjustment: 1.00
+2025-01-28 11:49:45,389 - risk_manager - INFO - - Confidence adjustment: 0.40
+2025-01-28 11:49:45,389 - risk_manager - INFO - - Final shares: 22
+2025-01-28 11:49:45,389 - risk_manager - INFO - Stop-loss levels for MSFT:
+2025-01-28 11:49:45,389 - risk_manager - INFO - - Entry price: $442.76
+2025-01-28 11:49:45,389 - risk_manager - INFO - - Initial stop: $418.40 (5.5%)
+2025-01-28 11:49:45,389 - risk_manager - INFO - - Trailing stop: $433.01 (2.2%)
+2025-01-28 11:49:45,390 - risk_manager - INFO - Position size calculation for MSFT:
+2025-01-28 11:49:45,390 - risk_manager - INFO - - Base shares: 103
+2025-01-28 11:49:45,390 - risk_manager - INFO - - Correlation adjustment: 1.00
+2025-01-28 11:49:45,390 - risk_manager - INFO - - Sector adjustment: 1.00
+2025-01-28 11:49:45,390 - risk_manager - INFO - - Volatility adjustment: 1.00
+2025-01-28 11:49:45,390 - risk_manager - INFO - - Confidence adjustment: 0.40
+2025-01-28 11:49:45,390 - risk_manager - INFO - - Final shares: 22
+2025-01-28 11:49:45,390 - trading_bot - INFO - Trade executed for MSFT: {'status': 'filled', 'ticker': 'MSFT', 'action': 'buy', 'quantity': 22, 'price': 100.0, 'timestamp': '2025-01-28T11:49:45.390709'}
+2025-01-28 11:49:45,390 - trading_bot - INFO - Processed MSFT: buy
+2025-01-28 11:49:45,390 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:49:45,390 - trading_bot - INFO - Processing GOOGL
+2025-01-28 11:49:45,390 - pipeline - INFO - Processing GOOGL through pipeline
+2025-01-28 11:49:45,390 - data_collector - INFO - Fetching stock data for GOOGL
+2025-01-28 11:49:45,474 - data_collector - INFO - Fetching options data for GOOGL
+2025-01-28 11:49:46,133 - data_collector - INFO - Fetching news for GOOGL
+2025-01-28 11:49:46,424 - trading_bot - INFO - No trade signal for GOOGL
+2025-01-28 11:49:46,425 - trading_bot - INFO - Processed GOOGL: None
+2025-01-28 11:49:46,425 - trading_bot - INFO - Processing AMZN
+2025-01-28 11:49:46,425 - pipeline - INFO - Processing AMZN through pipeline
+2025-01-28 11:49:46,425 - data_collector - INFO - Fetching stock data for AMZN
+2025-01-28 11:49:46,523 - data_collector - INFO - Fetching options data for AMZN
+2025-01-28 11:49:47,124 - data_collector - INFO - Fetching news for AMZN
+2025-01-28 11:49:47,353 - risk_manager - INFO - Position size calculation for AMZN:
+2025-01-28 11:49:47,354 - risk_manager - INFO - - Base shares: 185
+2025-01-28 11:49:47,354 - risk_manager - INFO - - Correlation adjustment: 1.00
+2025-01-28 11:49:47,354 - risk_manager - INFO - - Sector adjustment: 1.00
+2025-01-28 11:49:47,354 - risk_manager - INFO - - Volatility adjustment: 1.00
+2025-01-28 11:49:47,354 - risk_manager - INFO - - Confidence adjustment: 0.50
+2025-01-28 11:49:47,354 - risk_manager - INFO - - Final shares: 41
+2025-01-28 11:49:47,354 - risk_manager - INFO - Stop-loss levels for AMZN:
+2025-01-28 11:49:47,354 - risk_manager - INFO - - Entry price: $239.53
+2025-01-28 11:49:47,354 - risk_manager - INFO - - Initial stop: $226.36 (5.5%)
+2025-01-28 11:49:47,354 - risk_manager - INFO - - Trailing stop: $234.26 (2.2%)
+2025-01-28 11:49:47,355 - risk_manager - INFO - Position size calculation for AMZN:
+2025-01-28 11:49:47,355 - risk_manager - INFO - - Base shares: 185
+2025-01-28 11:49:47,355 - risk_manager - INFO - - Correlation adjustment: 1.00
+2025-01-28 11:49:47,355 - risk_manager - INFO - - Sector adjustment: 1.00
+2025-01-28 11:49:47,355 - risk_manager - INFO - - Volatility adjustment: 1.00
+2025-01-28 11:49:47,355 - risk_manager - INFO - - Confidence adjustment: 0.50
+2025-01-28 11:49:47,355 - risk_manager - INFO - - Final shares: 41
+2025-01-28 11:49:47,355 - trading_bot - INFO - Trade executed for AMZN: {'status': 'filled', 'ticker': 'AMZN', 'action': 'buy', 'quantity': 41, 'price': 100.0, 'timestamp': '2025-01-28T11:49:47.355671'}
+2025-01-28 11:49:47,355 - trading_bot - INFO - Processed AMZN: buy
+2025-01-28 11:49:47,355 - trading_bot - INFO - Current portfolio value: $100,000.00
+2025-01-28 11:49:47,355 - trading_bot - INFO - Processing META
+2025-01-28 11:49:47,355 - pipeline - INFO - Processing META through pipeline
+2025-01-28 11:49:47,355 - data_collector - INFO - Fetching stock data for META
+2025-01-28 11:49:47,455 - data_collector - INFO - Fetching options data for META
+2025-01-28 11:49:48,353 - data_collector - INFO - Fetching news for META
+2025-01-28 11:49:48,728 - trading_bot - INFO - No trade signal for META
+2025-01-28 11:49:48,728 - trading_bot - INFO - Processed META: None
+2025-01-28 11:49:48,728 - trading_bot - INFO - Test mode - completing single run

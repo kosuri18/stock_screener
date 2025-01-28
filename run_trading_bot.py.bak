@@ -1,0 +1,53 @@
+import logging
+from trading_bot import TradingBot
+from dotenv import load_dotenv
+import os
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('trading_bot.log'),
+        logging.StreamHandler()
+    ]
+)
+
+def main():
+    # Load environment variables
+    load_dotenv()
+    
+    # Define trading parameters
+    TICKERS = [
+        'AAPL',  # Apple
+        'MSFT',  # Microsoft
+        'GOOGL', # Google
+        'AMZN',  # Amazon
+        'META'   # Meta (Facebook)
+    ]
+    
+    CHECK_INTERVAL = 300  # 5 minutes in seconds
+    
+    # Initialize and run the bot
+    try:
+        bot = TradingBot(
+            tickers=TICKERS,
+            check_interval=CHECK_INTERVAL,
+            test_mode=True  # Set to False for real trading
+        )
+        
+        logging.info("Starting trading bot...")
+        logging.info(f"Monitoring tickers: {', '.join(TICKERS)}")
+        logging.info(f"Check interval: {CHECK_INTERVAL} seconds")
+        
+        # Run the bot
+        bot.run()
+        
+    except KeyboardInterrupt:
+        logging.info("Shutting down bot gracefully...")
+    except Exception as e:
+        logging.error(f"Bot error: {str(e)}")
+        raise
+
+if __name__ == "__main__":
+    main() 

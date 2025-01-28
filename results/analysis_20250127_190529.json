@@ -1,0 +1,74 @@
+{
+    "AAPL": {
+        "ticker": "AAPL",
+        "current_price": 229.86000061035156,
+        "technical_analysis": {
+            "trend": {
+                "sma_20_50_cross": "BEARISH",
+                "macd_signal": "BEARISH"
+            },
+            "momentum": {
+                "rsi": {
+                    "value": 35.61380550175157,
+                    "signal": "NEUTRAL"
+                },
+                "stochastic": {
+                    "k": 37.495516535997915,
+                    "d": 21.353715883514997,
+                    "signal": "NEUTRAL"
+                }
+            },
+            "volatility": {
+                "bollinger": {
+                    "position": "MIDDLE",
+                    "bandwidth": 0.18877091932222811
+                }
+            }
+        },
+        "options_analysis": {
+            "call_analysis": {
+                "avg_iv": 0.5725140405273437,
+                "avg_volume": 21211.555555555555,
+                "avg_open_interest": 11570.666666666666,
+                "most_active_strike": 230.0
+            },
+            "put_analysis": {
+                "avg_iv": 0.538212625732422,
+                "avg_volume": 11266.777777777777,
+                "avg_open_interest": 5649.0,
+                "most_active_strike": 225.0
+            },
+            "iv_skew": 0.14539005084493872,
+            "current_price": 229.86000061035156,
+            "historical_volatility": 0.23249569244795332
+        },
+        "backtest_results": {
+            "total_trades": 3,
+            "winning_trades": 2,
+            "losing_trades": 1,
+            "avg_profit_loss": 10.630167643229166,
+            "avg_profit_loss_pct": 6.404218359254458,
+            "max_profit": 44.17988586425781,
+            "max_loss": -12.789993286132812,
+            "avg_holding_period": 81.0,
+            "final_capital": 117972.64829220793,
+            "total_return_pct": 17.97264829220793,
+            "sharpe_ratio": 0.49931307932685787
+        },
+        "sentiment_score": 0.6,
+        "trade_suggestions": [
+            {
+                "strategy_type": "Iron Condor",
+                "entry_price": 229.86000061035156,
+                "exit_price": 229.86000061035156,
+                "max_loss": 0.0,
+                "max_profit": 10.7,
+                "probability_profit": 0.68,
+                "risk_reward_ratio": 0.0,
+                "days_to_expiry": 30,
+                "implied_volatility": 0.5584760949707032
+            }
+        ],
+        "last_updated": "2025-01-27 19:05:29"
+    }
+}

@@ -1,0 +1,1 @@
+{"AAPL": {"technical_analysis": {"trend": {"sma_20_50_cross": "BULLISH"}, "momentum": {"rsi": {"value": 65.5}}}, "sentiment_score": 0.75}, "GOOGL": {"technical_analysis": {"trend": {"sma_20_50_cross": "BEARISH"}, "momentum": {"rsi": {"value": 45.2}}}, "sentiment_score": 0.6}}
